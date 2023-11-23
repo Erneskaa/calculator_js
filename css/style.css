@@ -1,7 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+
 }
+
+
+
+.tech_buttons {
+    -webkit-text-fill-color: #F16565;
+
+}
+span {
+
+}
+
+button.equal {
+    background-color: #F16565;
+}
+
+.equal span {
+    -webkit-text-fill-color: white;
+}
+
+.service_buttons {
+    -webkit-text-fill-color: #5ca7e0;
+}
+
 
 .container {
     width: 100%;
@@ -29,23 +53,48 @@
     float: left;
     text-align: center;
     top: 10px;
-    
+
 }
-.input_numbers{
-    margin: 0 15px 0 15px;
-    height: 500px;
+
+.input_numbers {
+    position: relative;
+    margin: 30px 15px 0 15px;
+    height: 80px;
+    bottom: 0px;
+}
+
+.saved_calculations {
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    text-align: right;
 }
 
 .input_numbers input {
     width: 100%;
+    /* height: 100%; */
+    border: 1px solid black;
+    text-align: right;
+    font-size: 45px;
+    border: 0px;
 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::-webkit-input-placeholder {
+    text-align: right;
 }
 
 .switch_theme {
     margin-left: auto;
     width: 80px;
     height: 40px;
-    background-color: red;
+    background-color: grey;
     float: right;
 }
 
@@ -64,7 +113,7 @@
 .buttons_container {
     width: 100%;
     height: 70%;
-    background-color: grey;
+    background-color: 0;
     border-radius: 10px;
     position: absolute;
     bottom: 0;
@@ -78,11 +127,14 @@
 }
 
 .buttons button {
+    padding: 0;
     width: 100px;
     height: 70px;
     border: 0px;
     border-radius: 10px;
-
+    font-size: 40px;
+    align-items: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 button.zero {
