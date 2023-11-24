@@ -10,52 +10,52 @@
 
 <body>
 
-    <div class="container">
-        <div class="calculator">
-
-            <div class="header">
-                <p>Calc</p>
-                <div class="switch_theme"></div>
-            </div>
-            <div class="input_numbers">
-                <div class="saved_calculations">12 X</div>
-                <input type="number" placeholder="0">
-            </div>
-
-            <div class="buttons_container">
-                <div class="buttons">
-                    <div class="1">
-                        <button class="service_buttons">AC</button>
-                        <button class="service_buttons">C</button>
-                        <button class="service_buttons">%</button>
-                        <button class="tech_buttons"><span>&#247;</span></button>
-                    </div>
-                    <div class="2">
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button class="tech_buttons"><span>&#215;</span></button>
-                    </div>
-                    <div class="3">
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button class="tech_buttons"><span>&#8211;</span></button>
-                    </div>
-                    <div class="4">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button class="tech_buttons"><span>+</span></button>
-                    </div>
-                    <div class="5">
-                        <button class="zero">0</button>
-                        <button>.</button>
-                        <button class="equal"><span>=</span></button>
-                    </div>
-                </div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="name_project">Calculator</div>
+            <div class="switch_theme">
+                <button class="theme"></button>
             </div>
         </div>
+
+        <div class="screen">
+            <section class="expression">2+2 </section>
+            <section class="result">7</section>
+        </div>
+
+
+        <section class="calc-buttons">
+            <div class="calc-button-row">
+                <button class="calc-button service_btn">AC</button>
+                <button class="calc-button service_btn">C</button>
+                <button class="calc-button service_btn">%</button>
+                <button class="calc-button service_btn">&larr;</button>
+            </div>
+            <div class="calc-button-row">
+                <button class="calc-button bck_color">7</button>
+                <button class="calc-button bck_color">8</button>
+                <button class="calc-button bck_color">9</button>
+                <button class="calc-button">&divide;</button>
+            </div>
+            <div class="calc-button-row">
+                <button class="calc-button bck_color">4</button>
+                <button class="calc-button bck_color ">5</button>
+                <button class="calc-button bck_color ">6</button>
+                <button class="calc-button ">&times;</button>
+            </div>
+            <div class="calc-button-row">
+                <button class="calc-button bck_color">1</button>
+                <button class="calc-button bck_color">2</button>
+                <button class="calc-button bck_color ">3</button>
+                <button class="calc-button">&minus;</button>
+            </div>
+            <div class="calc-button-row">
+                <button class="calc-button bck_color ">0</button>
+                <button class="calc-button bck_color ">.</button>
+                <button class="calc-button equal">=</button>
+                <button class="calc-button">+</button>
+            </div>
+        </section>
     </div>
 </body>
 
