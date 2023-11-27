@@ -1,7 +1,9 @@
 'use strict';
 
 const result = document.querySelector('.result'),
-    expression = document.querySelector('.expression');
+    expression = document.querySelector('.expression'),
+    switch_theme = document.querySelector('.theme'),
+    wrapper = document.querySelector('.wrapper');
 
 let ex = '';
 let runningTotal = 0;
@@ -120,3 +122,12 @@ function init() {
 }
 
 init();
+
+
+function switchTheme() {
+    switch_theme.addEventListener('click', () => {
+        wrapper.classList.toggle('dark');
+    })
+}
+
+switchTheme();

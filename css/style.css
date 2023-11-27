@@ -133,3 +133,27 @@ button.theme {
 .bck_color {
     background: none;
 }
+
+
+/* Dark theme */
+.dark {
+    background-color: #1d1d1d;
+}
+
+.dark .screen { 
+    background-color: #222222;
+    color: #313131;
+}
+
+.dark .service_btn{
+    color: #f9f9f9;
+    background-color: #313131;
+}
+
+.dark .calc-button:last-child{
+    background-color: #4567b6;
+}
+
+.dark .equal{
+    background-color: #0048f2;
+}
