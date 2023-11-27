@@ -48,6 +48,7 @@ function handleSymbol(symbol) {
         case '←':
             if (buffer.length === 1) {
                 buffer = '0';
+                ex = buffer;
             } else {
                 buffer = buffer.substring(0, buffer.length - 1);
                 ex = buffer;
@@ -67,7 +68,7 @@ function handleMath(symbol) {
     if (buffer === '0') {
         return;
     }
-    const intBuffer = parseInt(buffer);
+    const intBuffer = parseFloat(buffer);
 
     if (runningTotal === 0) {
         runningTotal = intBuffer;
@@ -82,16 +83,16 @@ function handleMath(symbol) {
 
 function flushOperation(intBuffer) {
     if (previousOperator === '+') {
-        runningTotal += intBuffer;
+        runningTotal = Number((runningTotal + intBuffer)).toFixed(0);
     }
     else if (previousOperator === '−') {
-        runningTotal -= intBuffer;
+        runningTotal = Number((runningTotal - intBuffer)).toFixed(0);
     }
     else if (previousOperator === '÷') {
-        runningTotal /= intBuffer;
+        runningTotal = Number((runningTotal / intBuffer)).toFixed(1);
     }
     else if (previousOperator === '×') {
-        runningTotal *= intBuffer;
+        runningTotal = Number((runningTotal * intBuffer)).toFixed(1);
     }
 }
 
